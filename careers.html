@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Career Selection -->
+    <section id="careerSelectionScreen" class="screen active">
+      <h1>Select a Career</h1>
+      <div class="career-cards">
+        <div class="career-card" data-career="doctor">Doctor</div>
+        <div class="career-card" data-career="nurse">Nurse</div>
+        <div class="career-card" data-career="softwareEngineer">Software Engineer</div>
+        <div class="career-card" data-career="teacher">Teacher</div>
+      </div>
+    </section>
+
+    <!-- Simulation Screen -->
+    <section id="simulationScreen" class="screen">
+      <h1 id="careerTitle"></h1>
+      <div id="scenarioContainer"></div>
+      <button id="nextBtn" class="hidden">Next</button>
+    </section>
+
+    <!-- Summary Screen -->
+    <section id="summaryScreen" class="screen">
+      <h1>Simulation Complete</h1>
+      <p id="summaryText"></p>
+      <button id="restartBtn">Choose Another Career</button>
+      <a href="index.html" class="btn">Log Out</a>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
